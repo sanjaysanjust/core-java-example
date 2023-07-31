@@ -1,0 +1,4 @@
+Its a non linear DS used to store data.
+Its made up of nodes and edges without having any cycle
+Each node in a tree can point to n number of nodes in a tree
+Its way of representing hierarchial structure with a root node and  many level of additional  nodes.
