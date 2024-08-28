@@ -8,11 +8,11 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-class animal implements Serializable {
+class animal  {
 	int i = 10;
 }
 
-class dog2 extends animal {
+class dog2 extends animal implements Serializable {
 	int j = 20;
 	dog4 g3=new dog4();
 	
@@ -30,6 +30,7 @@ public class serialization_wrt_inheritence2 {
 		FileOutputStream fos = new FileOutputStream("ser_ex4.ser");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		dog2 d =new dog2();
+		d.i=100;
 		d.g3.name = "Sanjay";
 		System.out.println("Before Seri ===>"+ d);
 		oos.writeObject(d);
@@ -42,10 +43,17 @@ public class serialization_wrt_inheritence2 {
 
 }
 
-//Ser. will be inherited to the child objects via inheritence.
-// Object class doess not implement serlzn.
+//Ser. will be inherited to the child objects via inheritance.
+// Object class does not implement serlzn.
 
-// Serilzation throws NotSerializaleException when an instance class is not serilazed. Example: dog4
+// Serialization throws NotSerializaleException when an instance class is not serilazed. Example: dog4
+
+//Uncomment below code and and line no 57 method to check for exception.
+
+//class dog4 {
+//	int age=10;
+//	static String name = "adf";
+//}
 
 class dog4 implements Serializable{
 	int age=10;

@@ -62,5 +62,5 @@ class ext_example implements Externalizable {
 	}
 }
 
-// Here JVM will always look for no-arg constructor defined externally while deserilazing other wise ClassNotFound Exception will be thrown.
-// IN extrlzn, transient keyword does not make any differnce, As Externalzn will happen fully on programmer will and serlzn will happen and fully controllerd by JVM.
+// Here  JVM will always look for no-arg constructor defined externally while deserializing other wise ClassNotFound Exception will be thrown.
+// IN extrlzn, transient keyword does not make any difference, As Externalzn will happen fully on programmer will and serlzn will happen and fully controllerd by JVM.

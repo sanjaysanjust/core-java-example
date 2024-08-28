@@ -1,6 +1,6 @@
 package lang_package;
 
-public class equlas_example {
+public class equlas_example extends Thread implements Runnable{
 
 	int rollno;
 	String name;
@@ -20,6 +20,11 @@ public class equlas_example {
 		System.out.println(eq3.equals(eq4));
 		System.out.println(eq3.equals("SAnjay"));
 		System.out.println(eq3.equals(null));
+		
+		Integer i =new Integer(10);
+		Integer j = new Integer(10);
+		System.out.println(i == j);
+		System.out.println(i.equals(j));
 	}
 
 	@Override
@@ -59,7 +64,7 @@ public class equlas_example {
 
 // IN string class equals method is already over written
 // In StringBuffer and StringBuilder classes, equals method is not over written
-// Object class equals method is always for refernce comparision not for content comparision. I String buffer and builder object level equals method will be executed.
+// Object class equals method is always for reference comparison not for content comparison. In String buffer and builder object level equals method will be executed.
 
 
 

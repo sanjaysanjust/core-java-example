@@ -10,4 +10,5 @@ getClass() Method will be used in reflection activity to find the runtime implem
 =====================================================================
 finalize() Method.
 
-JVM's Garbage collector calls finalize method to perform cleanup activity before it takes the object to Garbage collection. Once finalize method compltes automaticlly GC destroyd that object
+JVM's Garbage collector calls finalize method to perform cleanup activity before it takes the object to Garbage collection.
+ Once finalize method compltes automaticlly GC destroyd that object

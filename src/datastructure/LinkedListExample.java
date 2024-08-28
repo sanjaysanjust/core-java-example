@@ -8,7 +8,7 @@ public class LinkedListExample {
 
 	public static void main(String[] args) {
 		LinkedListExample lle = new LinkedListExample();
-		lle.head = new ListNode(10);
+		lle.head = new ListNode(05);
 		ListNode second = new ListNode(20);
 		ListNode third = new ListNode(30);
 		ListNode fourth = new ListNode(10);

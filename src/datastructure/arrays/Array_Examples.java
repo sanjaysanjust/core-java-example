@@ -1,5 +1,14 @@
 package datastructure.arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
+// For arrays, There is no underlying  data structures,
+//Thats why ready made methods are not available for arrays as like in other collections (Arraylist Set etc).
+//So far every feature like sorting(put()) searching(contains()) getting(get()) object programmer has to write the logic for array objects
+
+//Arrays can hold both primitives and objects
+
 public class Array_Examples {
 	public static void main(String[] args) {
 		int[] no = { 2, 4, 3, 5, 6, 7, 6, 5 };
@@ -76,6 +85,7 @@ public class Array_Examples {
 
 	private static int[] moveZerosToEnd(int[] arr, int length) {
 		int j = 0;
+		
 		for (int i = 0; i < length; i++) {
 			if (arr[i] != 0 && arr[j] == 0) {
 				int temp = arr[i];

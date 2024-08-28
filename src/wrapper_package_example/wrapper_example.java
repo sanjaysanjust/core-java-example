@@ -75,7 +75,7 @@ public class wrapper_example {
 	}
 
 	private static void xxxVaue() {
-		// Use this methoods to get the primitivve value from the given wrapper object.
+		// Use this methoods to get the primitive value from the given wrapper object.
 		
 		Integer i =new Integer(130);
 		
@@ -106,7 +106,7 @@ public class wrapper_example {
 	private static void valueOfMethod() {
 		// TO create Integer Object to a given Primitive value as alternative to
 		// constructor
-		// Except char class all other Wrapper classes will have static valueOF method
+		// Except char class all other Wrapper classes will have static valueOf method
 		// for the given string
 
 		Integer i1 = new Integer(0);
@@ -115,11 +115,12 @@ public class wrapper_example {
 		Double d = new Double(0);
 		Double d1 = new Double("10");
 		Boolean b4 = new Boolean("sanjay");
-		// Evry integer type wrapper class(byte integer lng)conatind the following of
+		// Every integer type wrapper class(byte integer long)contains the following of
 		// methods to create WO specified raddix string.
 		// Public static valueOf(String s , int radix)
 
 		Integer i3 = Integer.valueOf("100", 2);
 		Double d4 = Double.valueOf(0);
+		Byte b = Byte.valueOf("0");
 	}
 }

@@ -14,11 +14,13 @@ class Dog implements Serializable {
 	transient char[] pwd = { 'a', 'b', 'c', 'd', 'e' };
 	static int id = 100;
 	final int dob=2023;
+	transient int test_val =10;
+	transient String test_val2 = "sanjay";
 
 	@Override
 	public String toString() {
 
-		return "Value OF Dog ::: Age ===> " + age + "  Name ===>" + name + "  Password ===>" + pwd+"  ID ===>"+id + " DOB ===>"+dob;
+		return "Value OF Dog ::: Age ===> " + age + "  Name ===>" + name + "  Password ===>" + pwd+"  ID ===>"+id + " DOB ===>"+dob+ " test_val ===>"+test_val+" test_val2 ==>"+test_val2;
 	}
 }
 
@@ -35,7 +37,7 @@ public class Serilazation {
 		d1.id=2000;
 		d1.age=35;
 		
-		System.out.println("Dog Object After serilization (static value chnage)===>" + d1);
+		System.out.println("Dog Object After serilization ===>" + d1);
 		
 		
 		// Deserialization

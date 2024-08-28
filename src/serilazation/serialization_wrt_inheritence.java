@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 class animal2 {
-	int i = 10;
+	int i=10;
 }
 
 class dog3 extends animal2 implements Serializable{
@@ -42,7 +42,7 @@ public class serialization_wrt_inheritence {
 
 }
 
-//When Child class implements serlz but not parent class in that case JVM will always write the instance level assignment value while desrilization happens. i.e., here we have changed the value of i from 10 to 100 before serilization and after desrilization JVM assign the instance level assigment value 10.
+//When Child class implements serlz but not parent class in that case JVM will always write the instance level assignment value while deserialization happens. i.e., here we have changed the value of i from 10 to 100 before serilization and after desrilization JVM assign the instance level assigment value 10.
 
 
 //IN this scenarios every parent class should have no arg constuctor other wise InvalidClassException will be thrown by JVM. It may be default constructor OR explicitly provided by programmer.

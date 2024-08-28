@@ -53,6 +53,6 @@ public class Customized_Serlization_Multiple_Object {
 
 }
 
-// Here deserilization has to happen in the order serilaization happens. i.e., firstString and then INteger
+// Here deserialization has to happen in the order serilaization happens. i.e., firstString and then INteger
 
 // Here programmer can't call private methods, private void writeObject and private void readObject. Here JVM will execute these methods.
